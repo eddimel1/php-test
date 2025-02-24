@@ -1,2 +1,1 @@
-# test-php
-# test-php
+sudo bash ./up.sh
