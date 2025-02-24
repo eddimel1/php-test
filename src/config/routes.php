@@ -10,6 +10,10 @@ use Controllers\{
 
 use Middlewares\AuthMiddleware;
 
+$app->router->get('/', [AuthController::class, 'loginForm']);
+
+$app->router->get('', [AuthController::class, 'loginForm']);
+
 $app->router->get('/login', [AuthController::class, 'loginForm']);
 
 $app->router->post('/login', [AuthController::class, 'login']);
