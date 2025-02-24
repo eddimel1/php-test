@@ -12,6 +12,10 @@ class AuthController extends Controller {
 
     public function login()
     {    
+            if(!empty($this->session->get('user_id'))){
+                $this->response->redirect('/profile');
+            }
+
         $input = $this->request->all(); 
     
         $query = $this->db->pdo->prepare('
