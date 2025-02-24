@@ -1,0 +1,17 @@
+{
+    "description": "test project",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        
+    },
+    "autoload": {
+        "files": [],
+        "psr-0": {},
+        "psr-4": {
+            "App\\": "./",
+            "Controllers\\": "./controllers",
+            "Middlewares\\": "./middlewares"
+        }
+    }
+}
